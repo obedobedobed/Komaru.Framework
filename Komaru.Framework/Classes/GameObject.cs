@@ -9,8 +9,8 @@ public class GameObject
     public Atlas Atlas { get; private set; }
     public int frame { get; protected set; }
     public Texture2D Texture { get; private set; }
-    private Vector2 position;
-    private Vector2 size;
+    protected Vector2 position;
+    protected Vector2 size;
 
     // Returning gameobject rectangle (for drawing or collisions checking)
     public Rectangle rectangle

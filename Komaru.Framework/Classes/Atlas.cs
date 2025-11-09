@@ -7,7 +7,7 @@ namespace Komaru.Framework.Classes;
 public class Atlas
 {
     public Texture2D AtlasTexture { get; private set; }
-    private List<Rectangle> atlasRectanglesList;
+    private List<Rectangle> atlasRectanglesList = new List<Rectangle>;
     public Rectangle[] AtlasRectangles
     {
         get

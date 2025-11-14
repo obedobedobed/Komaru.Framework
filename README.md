@@ -1,6 +1,8 @@
 # Komaru.Framework
-See! Its Komaru down here V
+See! Its Komaru down here!
+
 <img width="225" height="225" alt="Komaru" src="https://github.com/user-attachments/assets/cb7b7b54-7dee-4ee0-9b29-71f3dfec00fa" />
+
 Komaru.Framework is small class library for ease routine in MonoGame
 
 There is (v0.0.3):

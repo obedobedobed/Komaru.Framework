@@ -5,11 +5,13 @@ See! Its Komaru down here!
 
 Komaru.Framework is small class library for ease routine in MonoGame
 
-## Features (v0.0.3):
+## Features (v0.0.4):
 - Scenes system
 - Sprites atlases system
 - GameObject base class
 - Tile worlds
+- Text system
+- Buttons system
 
 ## How to install:
 - Download source code

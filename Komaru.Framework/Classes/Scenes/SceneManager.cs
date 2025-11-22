@@ -2,14 +2,21 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Komaru.Framework.Scenes;
 
-public class SceneManager
+public static class SceneManager
 {
-    public Scene currentScene { get; private set; }
+    public static ContentManager contentManager;
+    public static Scene scene { get; private set; }
 
-    // Method for reassign currentScene and load it
-    public void LoadScene(Scene scene, ContentManager contentManager)
+    // Method for assign content manager
+    public static void LoadContentManager(ContentManager contentManager)
     {
-        currentScene = scene;
-        currentScene.Load(contentManager);
+        SceneManager.contentManager = contentManager;
+    }
+
+    // Method for reassign scene and load it
+    public static void LoadScene(Scene scene)
+    {
+        SceneManager.scene = scene;
+        scene.Load(contentManager);
     } 
 }

@@ -1,6 +1,7 @@
+using Komaru.Framework.Classes;
 using Microsoft.Xna.Framework;
 
-namespace Komaru.Framework.Classes.UI;
+namespace Komaru.Framework.UI;
 
 // Toggling state when pressed
 public abstract class ToggleButton : Button

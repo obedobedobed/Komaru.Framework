@@ -1,7 +1,8 @@
+using Komaru.Framework.Classes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace Komaru.Framework.Classes.UI;
+namespace Komaru.Framework.UI;
 
 // Base class for buttons
 public abstract class Button : GameObject

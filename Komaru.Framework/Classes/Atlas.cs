@@ -26,7 +26,7 @@ public class Atlas
         {
             for (int x = 0; x < atlasTexture.Width; x += (int)spriteSize.X)
             {
-                atlasRectanglesList.Add(new Rectangle(y, x, (int)spriteSize.Y, (int)spriteSize.X));
+                atlasRectanglesList.Add(new Rectangle(x, y, (int)spriteSize.X, (int)spriteSize.Y));
             }
         }
     }

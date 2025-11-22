@@ -6,7 +6,7 @@ namespace Komaru.Framework.GameWorld;
 
 public class Tile : GameObject
 {
-    private int tileId;
+    public int tileId { get; private set; }
     private static int tilesCount;
     public int TileNumber { get; private set; }
     private const int GROUND_RECTANGLE_HEIGHT = 5;

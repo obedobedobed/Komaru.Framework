@@ -4,18 +4,18 @@ namespace Komaru.Framework.GameWorld;
 
 public static class World
 {
-    public static Tile[] WorldTiles { get; private set; }
+    public static Tile[] Tiles { get; private set; } = new Tile[0];
 
     // Overload for change all tiles
     public static void UpdateTiles(Tile[] tiles)
     {
-        WorldTiles = tiles;
+        Tiles = tiles;
     }
 
     // Overload for add/delete one tile
     public static void UpdateTiles(Tile tile, bool isDeleting = false)
     {
-        var tmpTiles = WorldTiles.ToList();
+        var tmpTiles = Tiles.ToList();
 
         if (!isDeleting)
         {
@@ -26,6 +26,6 @@ public static class World
             tmpTiles.Remove(tile);
         }
 
-        WorldTiles = tmpTiles.ToArray();
+        Tiles = tmpTiles.ToArray();
     }
 }
